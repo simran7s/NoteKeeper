@@ -6,6 +6,7 @@
 
 html {
   font-family: "Montserrat", sans-serif;
+
 }
 
 body {
@@ -75,7 +76,6 @@ footer p {
 
 /* ADD NOTE */
 .container {
-  text-align: center;
   margin: auto;
   width: 50%;
 }
@@ -85,7 +85,7 @@ footer p {
   border-radius: 7px;
   box-shadow: 0 2px 5px #bbb;
   padding: 10px;
-  margin: 16px;
+  margin: 16px auto;
   position: relative;
 }
 
@@ -131,4 +131,16 @@ footer p {
   bottom: -25px;
   right: 1rem;
   cursor: pointer;
+}
+
+@media(max-width: 600px) {
+  .note {
+    width: 90%;
+    margin: 1.5rem, auto;
+  }
+
+  .container {
+    width: 100%;
+  }
+
 }
