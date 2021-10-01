@@ -28,21 +28,20 @@ function App() {
     }
 
     function removeNote(id) {
-        console.log("DELETE THIS")
-        console.log(id)
-        // setList((prevValue) => {
-        //     prevValue.filter((item, index) => {
-        //         if (id != index - 1) {
-        //             return item
-        //         }
-        //     })
-        // })
+        // Filter out the item that we want to delete
+        const newList = list.filter((item) => {
+            return item.id !== id
+        })
+
+        // set list to be new filtered array of note objecta
+        setList(newList)
     }
 
     return (
         <div>
             <Header />
             <AddNote addNote={addNote} />
+
             {list.map((noteItem) => {
                 return (
                     <Note
