@@ -10,8 +10,9 @@ html {
 }
 
 body {
-  background: #eee;
+  background-color: #fff;
   padding: 0 16px;
+  background-image: url(./images/cubes.png);
 }
 
 header {
